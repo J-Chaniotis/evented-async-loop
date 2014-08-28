@@ -24,7 +24,8 @@
     "url": "https://github.com/J-Chaniotis/evented-async-loop/issues"
   },
   "homepage": "https://github.com/J-Chaniotis/evented-async-loop",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "chai": "^1.9.1",
     "mocha": "^1.21.4"
   }
