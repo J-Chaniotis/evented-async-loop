@@ -1,6 +1,6 @@
 {
   "name": "evented-async-loop",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Loop through asynchronous code with events",
   "main": "index.js",
   "scripts": {
