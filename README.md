@@ -114,6 +114,6 @@ loop.on('next', function (elm, i, array) {
 ###Methods
 * <b>`.start([arg1, ...])`:</b> Start the loop.Passes arguments to the first `next` event
 * <b>`.next([arg1, ...])`:</b> Go to the next iteration. Passes agruments to `next` event. If the loop is completed `done` is emitted instead.
-* <b>`.done([arg1, ...])`:Stop the loop early. Passes arguments to `done` event</b>
+* <b>`.done([arg1, ...])`:</b> Stop the loop early. Passes arguments to `done` event
 * <b>`.error([err])`:</b> Emit an `error` event
 * <b>`.break()`:</b> Break the loop. it wont emit `done`
