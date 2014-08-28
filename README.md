@@ -1,4 +1,4 @@
-##evented-async-loop
+##evented-async-loop [![Build Status](https://travis-ci.org/J-Chaniotis/evented-async-loop.svg?branch=master)](https://travis-ci.org/J-Chaniotis/evented-async-loop)
 
 Loop through asynchronous code with events
 
