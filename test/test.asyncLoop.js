@@ -48,5 +48,37 @@ describe('asyncLoop.js test', function () {
         loop.start(0, 0);
     });
 
-    //test error and break
+    it('should emit error and break', function (done) {
+        loop.on('next', function (elm) {
+            if (elm === 9) {
+                loop.error(elm).break();
+            }
+
+            loop.next();
+        });
+        loop.on('done', function () {
+            throw new Error('this sould not have been called');
+        });
+        loop.on('error', function (err) {
+            expect(err).to.equal(9);
+            done();
+        });
+        loop.start();
+    });
+
+    it('sould be chainable', function (done) {
+        loop.on('next', function () {
+            loop.next();
+        }).on('done', function () {
+            done();
+        }).start();
+    });
+
+    it('sould be tolerant to abuse', function (done) {
+        loop.start().on('next', function () {
+            loop.next();
+        }).on('done', function () {
+            done();
+        });
+    });
 });
