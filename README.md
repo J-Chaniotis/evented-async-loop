@@ -105,7 +105,6 @@ loop.on('next', function (elm, i, array) {
 }).start();
 ```
 ##API
-// Todo
 ###Events
 * <b>`next[element, i, array, arg1, ...]`</b>
 * <b>`done[arg1, ...]`</b>
@@ -117,3 +116,6 @@ loop.on('next', function (elm, i, array) {
 * <b>`.done([arg1, ...])`:</b> Stop the loop early. Passes arguments to `done` event
 * <b>`.error([err])`:</b> Emit an `error` event
 * <b>`.break()`:</b> Break the loop. it wont emit `done`
+
+##Test
+Change your working directory to the project's root, `npm install` to get the development dependencies and then `npm test`
