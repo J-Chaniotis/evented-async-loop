@@ -1,0 +1,31 @@
+{
+  "name": "evented-async-loop",
+  "version": "0.0.0",
+  "description": "Loop through asynchronous code with events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://J-Chaniotis@github.com/J-Chaniotis/evented-async-loop.git"
+  },
+  "keywords": [
+    "async",
+    "loop",
+    "event",
+    "control",
+    "flow",
+    "sequence"
+  ],
+  "author": "J.Chaniotis <j.k.chaniotis@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Chaniotis/evented-async-loop/issues"
+  },
+  "homepage": "https://github.com/J-Chaniotis/evented-async-loop",
+  "dependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  }
+}
